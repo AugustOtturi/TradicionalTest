@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./assets/3_AmbienteV1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.container .moon {
+    background-image: url(./assets/1_Luna.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    width: 450px;
+    position: absolute;
+    right: 1rem;
+    top: -4rem;
+    border-radius: 50%;
+    box-shadow: 0px 0px 40px 1px rgba(231, 195, 18, 0.682);
+    animation: levitate 3s ease-in-out infinite;
+}
+
+.container .camino {
+    background-image: url(./assets/2_CaminoV1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+    width: 70%;
+    position: absolute;
+    right: 6rem;
+    top: 8rem;
+}
+
+.container .botella {
+    background-image: url(./assets/4_BotellaV2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 12vw;
+    position: absolute;
+    left: 41rem;
+    top: 3rem;
+    scale: 1.1;
+}
+
+.container .logoAndText {
+    height: 100%;
+    width: 30rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.container .logoAndText .logo img {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 3rem;
+    display: block;
+}
+.container .logoAndText .texto1 img {
+    width: 60%;
+    margin: 6rem auto 1rem auto;
+    display: block;
+}
+.container .logoAndText .texto2 img {
+    width: 60%;
+    margin: 1rem auto 13rem auto;
+    display: block;
+}
+@keyframes levitate {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-12px);
+    }
+}
